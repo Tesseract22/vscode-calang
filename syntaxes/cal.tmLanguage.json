@@ -1,0 +1,39 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "calang",
+	"patterns": [
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#operator"
+		},
+		{
+			"include": "#keyword"
+		}
+	],
+	"repository": {
+		"operator": {
+			"name":"keyword.operator",
+			"match":"/"
+		},
+		"keyword": {
+			"name":"keyword.control",
+			"match":":=|="
+		},
+		"variable": {
+		  "match": "[a-z]",
+		  "name": "variable.name"
+		},
+		"number": {
+			"match": "[0-9]",
+			"name": "constant.numeric"
+		}
+
+		
+	},
+	"scopeName": "source.cal"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cal-extension",
+  "displayName": "cal-extension",
+  "description": "Experimental and Educational Language Support for CAL",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cal",
+      "aliases": ["calang", "cal"],
+      "extensions": [".cal"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cal",
+      "scopeName": "source.cal",
+      "path": "./syntaxes/cal.tmLanguage.json"
+    }]
+  }
+}
